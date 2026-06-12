@@ -1,1 +1,103 @@
-<hl>welcome</hl>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的项目与竞赛成果集</title>
+  <meta name="description" content="个人项目、竞赛、科研、奖项与作品展示网页" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">Portfolio</div>
+      <div class="nav-links">
+        <a href="#projects">成果</a>
+        <a href="#timeline">时间线</a>
+        <a href="#about">关于我</a>
+        <a href="#contact">联系</a>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <div>
+        <p class="eyebrow">Projects · Competitions · Awards</p>
+        <h1>我的项目与比赛成果集</h1>
+        <p class="hero-text">
+          这里整理了我参与过的课程项目、科研项目、竞赛作品、获奖经历和技术实践。
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">查看成果</a>
+          <a class="btn secondary" href="https://github.com/你的GitHub用户名" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <img src="./assets/avatar.jpg" alt="个人头像" />
+        <h2>你的名字</h2>
+        <p>方向：AI / 数据分析 / 软件开发 / 设计 / 工程实践</p>
+        <div class="stats">
+          <span><strong id="projectCount">0</strong> 项成果</span>
+          <span><strong id="awardCount">0</strong> 个奖项</span>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section intro" id="about">
+      <h2>个人简介</h2>
+      <p>
+        可以在这里写 3–5 句话：你的专业背景、技术方向、比赛经历、项目兴趣，以及你希望通过这个网页展示什么。
+      </p>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Selected Works</p>
+          <h2>项目 / 比赛成果</h2>
+        </div>
+
+        <div class="filters">
+          <button class="filter active" data-type="全部">全部</button>
+          <button class="filter" data-type="项目">项目</button>
+          <button class="filter" data-type="比赛">比赛</button>
+          <button class="filter" data-type="科研">科研</button>
+          <button class="filter" data-type="奖项">奖项</button>
+        </div>
+      </div>
+
+      <input
+        id="searchInput"
+        class="search"
+        type="text"
+        placeholder="搜索关键词：Python / AI / 国奖 / 机器人 / 数据分析..."
+      />
+
+      <div id="projectGrid" class="grid"></div>
+    </section>
+
+    <section class="section" id="timeline">
+      <p class="eyebrow">Timeline</p>
+      <h2>成长时间线</h2>
+      <div id="timelineList" class="timeline"></div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <h2>联系我</h2>
+      <p>邮箱：your_email@example.com</p>
+      <p>GitHub：github.com/你的GitHub用户名</p>
+      <p>LinkedIn / 个人主页 / 简历链接：可放在这里</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 你的名字 · Built with GitHub Pages</p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
