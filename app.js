@@ -1,0 +1,167 @@
+const achievements = [
+  {
+    title: "智能垃圾分类识别系统",
+    type: "项目",
+    year: "2025",
+    role: "项目负责人 / 算法开发",
+    image: "./assets/project-demo-1.png",
+    description:
+      "基于图像识别模型完成垃圾类别判断，并设计了前端展示界面与结果统计模块。",
+    tags: ["Python", "Computer Vision", "Web"],
+    award: "",
+    links: {
+      github: "https://github.com/你的用户名/项目仓库",
+      demo: "#"
+    }
+  },
+  {
+    title: "全国大学生数学建模竞赛",
+    type: "比赛",
+    year: "2024",
+    role: "建模与论文撰写",
+    image: "./assets/competition-1.png",
+    description:
+      "负责问题建模、数据清洗、结果可视化和论文撰写，完成完整建模报告。",
+    tags: ["数学建模", "MATLAB", "数据分析"],
+    award: "省级二等奖",
+    links: {
+      github: "#",
+      demo: "#"
+    }
+  },
+  {
+    title: "校园二手交易平台",
+    type: "项目",
+    year: "2024",
+    role: "前端开发 / 产品设计",
+    image: "./assets/project-demo-1.png",
+    description:
+      "实现商品发布、搜索筛选、收藏、用户主页等模块，重点优化移动端体验。",
+    tags: ["HTML", "CSS", "JavaScript"],
+    award: "",
+    links: {
+      github: "#",
+      demo: "#"
+    }
+  },
+  {
+    title: "科研训练：文本情感分析",
+    type: "科研",
+    year: "2025",
+    role: "数据处理 / 模型实验",
+    image: "./assets/project-demo-1.png",
+    description:
+      "对评论数据进行清洗、标注和建模实验，对比传统机器学习与深度学习方法。",
+    tags: ["NLP", "Machine Learning", "Python"],
+    award: "",
+    links: {
+      github: "#",
+      demo: "#"
+    }
+  },
+  {
+    title: "优秀学生奖学金",
+    type: "奖项",
+    year: "2023",
+    role: "个人奖项",
+    image: "./assets/competition-1.png",
+    description:
+      "因学业成绩、项目实践和综合表现获得学院 / 学校奖学金。",
+    tags: ["奖学金", "综合表现"],
+    award: "校级奖学金",
+    links: {
+      github: "#",
+      demo: "#"
+    }
+  }
+];
+
+let currentType = "全部";
+
+const grid = document.getElementById("projectGrid");
+const timelineList = document.getElementById("timelineList");
+const searchInput = document.getElementById("searchInput");
+const filterButtons = document.querySelectorAll(".filter");
+
+function renderCards() {
+  const keyword = searchInput.value.trim().toLowerCase();
+
+  const filtered = achievements.filter((item) => {
+    const matchType = currentType === "全部" || item.type === currentType;
+    const searchableText = [
+      item.title,
+      item.type,
+      item.year,
+      item.role,
+      item.description,
+      item.award,
+      ...item.tags
+    ]
+      .join(" ")
+      .toLowerCase();
+
+    return matchType && searchableText.includes(keyword);
+  });
+
+  grid.innerHTML = filtered
+    .map(
+      (item) => `
+      <article class="card">
+        <img src="${item.image}" alt="${item.title}" />
+        <div class="card-body">
+          <p class="meta">${item.year} · ${item.type} · ${item.role}</p>
+          <h3>${item.title}</h3>
+          ${
+            item.award
+              ? `<p><strong>成果：</strong>${item.award}</p>`
+              : ""
+          }
+          <p>${item.description}</p>
+          <div class="tag-row">
+            ${item.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}
+          </div>
+          <div class="card-links">
+            <a href="${item.links.github}" target="_blank">代码</a>
+            <a href="${item.links.demo}" target="_blank">展示</a>
+          </div>
+        </div>
+      </article>
+    `
+    )
+    .join("");
+
+  document.getElementById("projectCount").textContent = achievements.length;
+  document.getElementById("awardCount").textContent = achievements.filter(
+    (item) => item.award
+  ).length;
+}
+
+function renderTimeline() {
+  const sorted = [...achievements].sort((a, b) => b.year.localeCompare(a.year));
+
+  timelineList.innerHTML = sorted
+    .map(
+      (item) => `
+      <div class="timeline-item">
+        <p class="meta">${item.year} · ${item.type}</p>
+        <h3>${item.title}</h3>
+        <p>${item.award ? item.award + " · " : ""}${item.description}</p>
+      </div>
+    `
+    )
+    .join("");
+}
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    filterButtons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+    currentType = button.dataset.type;
+    renderCards();
+  });
+});
+
+searchInput.addEventListener("input", renderCards);
+
+renderCards();
+renderTimeline();
