@@ -4,7 +4,7 @@ const achievements = [
     type: "项目",
     year: "2025",
     role: "算法开发 / 模型组装",
-    image: "./assets/project-demo-1.png",
+    image: "./pictures/esp32-car.png",
     description:
       "基于图像识别模型完成垃圾类别判断，并设计了前端展示界面与结果统计模块。",
     tags: ["Python", "esp32"],
