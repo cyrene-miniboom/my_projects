@@ -11,7 +11,7 @@ const achievements = [
     award: "",
     links: {
       github: "https://github.com/cyrene-miniboom/esp32-car",
-      demo: "#"
+      demo: "https://cyrene-miniboom.github.io/esp32-car"
     }
   },
   {
