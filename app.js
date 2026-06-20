@@ -7,10 +7,10 @@ const achievements = [
     image: "./assets/project-demo-1.png",
     description:
       "基于图像识别模型完成垃圾类别判断，并设计了前端展示界面与结果统计模块。",
-    tags: ["Python", "嵌入式"],
+    tags: ["Python", "esp32"],
     award: "",
     links: {
-      github: "https://github.com/你的用户名/项目仓库",
+      github: "https://github.com/cyrene-miniboom/esp32-car",
       demo: "#"
     }
   },
