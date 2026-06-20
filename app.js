@@ -6,7 +6,7 @@ const achievements = [
     role: "算法开发 / 模型组装",
     image: "./pictures/esp32-car.png",
     description:
-      "基于图像识别模型完成垃圾类别判断，并设计了前端展示界面与结果统计模块。",
+      "3d打印小车外壳，esp32实现电机工作逻辑，并通过esp32的WiFi功能构建网页，实现对小车的控制",
     tags: ["Python", "esp32"],
     award: "",
     links: {
