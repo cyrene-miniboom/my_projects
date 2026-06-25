@@ -25,8 +25,8 @@ const achievements = [
     tags: ["arduino", "mqtt", "物联网"],
     award: "",
     links: {
-      github: "#",
-      demo: "#"
+      github: "https://github.com/cyrene-miniboom/arduino-projects",
+      demo: "https://cyrene-miniboom.github.io/arduino-projects/"
     }
   },
   {
