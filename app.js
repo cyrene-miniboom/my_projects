@@ -3,7 +3,7 @@ const achievements = [
     title: "esp32遥控小车",
     type: "项目",
     year: "2025",
-    role: "算法开发 / 模型组装",
+    role: "模型组装 \ 算法编写",
     image: "./pictures/esp32-car.png",
     description:
       "3d打印小车外壳，esp32实现电机工作逻辑，并通过esp32的WiFi功能构建网页，实现对小车的控制",
@@ -15,15 +15,15 @@ const achievements = [
     }
   },
   {
-    title: "全国大学生数学建模竞赛",
-    type: "比赛",
+    title: "arduino实践项目",
+    type: "项目",
     year: "2024",
-    role: "建模与论文撰写",
+    role: "模型组装 \ 算法编写",
     image: "./assets/competition-1.png",
     description:
-      "负责问题建模、数据清洗、结果可视化和论文撰写，完成完整建模报告。",
-    tags: ["数学建模", "MATLAB", "数据分析"],
-    award: "省级二等奖",
+      "arduino芯片实践项目，多传感器配合，mqtt信息传输，模拟倒车雷达",
+    tags: ["arduino", "mqtt", "物联网"],
+    award: "",
     links: {
       github: "#",
       demo: "#"
