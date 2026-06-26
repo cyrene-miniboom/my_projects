@@ -45,8 +45,8 @@ const achievements = [
     }
   },
   {
-    title: "科研训练：数字图像处理",
-    type: "科研",
+    title: "实验：seam-carving",
+    type: "实验",
     year: "2025",
     role: "数据处理 / 模型实验",
     image: "pictures/lenna.jpg",
