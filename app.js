@@ -19,7 +19,7 @@ const achievements = [
     type: "项目",
     year: "2024",
     role: "模型组装 \ 算法编写",
-    image: "./assets/competition-1.png",
+    image: "pictures/IMG_20250608_191339.jpg",
     description:
       "arduino芯片实践项目，多传感器配合，mqtt信息传输，模拟倒车雷达",
     tags: ["arduino", "mqtt", "物联网"],
