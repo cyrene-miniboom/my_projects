@@ -49,7 +49,7 @@ const achievements = [
     type: "科研",
     year: "2025",
     role: "数据处理 / 模型实验",
-    image: "./assets/project-demo-1.png",
+    image: "pictures/lenna.jpg",
     description:
       "对seam-carving算法进行应用与改进",
     tags: ["DIP", "seam-carving", "Python"],
