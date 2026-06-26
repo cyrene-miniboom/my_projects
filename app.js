@@ -55,8 +55,8 @@ const achievements = [
     tags: ["DIP", "seam-carving", "Python"],
     award: "",
     links: {
-      github: "#",
-      demo: "#"
+      github: "https://github.com/cyrene-miniboom/DIP_seam-carving",
+      demo: "https://cyrene-miniboom.github.io/DIP_seam-carving"
     }
   },
   {
