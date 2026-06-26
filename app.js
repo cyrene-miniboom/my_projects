@@ -17,7 +17,7 @@ const achievements = [
   {
     title: "arduino实践项目",
     type: "项目",
-    year: "2024",
+    year: "2025",
     role: "模型组装 \ 算法编写",
     image: "pictures/IMG_20250608_191339.jpg",
     description:
@@ -45,14 +45,14 @@ const achievements = [
     }
   },
   {
-    title: "科研训练：文本情感分析",
+    title: "科研训练：数字图像处理",
     type: "科研",
     year: "2025",
     role: "数据处理 / 模型实验",
     image: "./assets/project-demo-1.png",
     description:
-      "对评论数据进行清洗、标注和建模实验，对比传统机器学习与深度学习方法。",
-    tags: ["NLP", "Machine Learning", "Python"],
+      "对seam-carving算法进行应用与改进",
+    tags: ["DIP", "seam-carving", "Python"],
     award: "",
     links: {
       github: "#",
