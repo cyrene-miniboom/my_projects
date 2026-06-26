@@ -30,14 +30,14 @@ const achievements = [
     }
   },
   {
-    title: "校园二手交易平台",
+    title: "虚拟世界：血管微观漫游",
     type: "项目",
-    year: "2024",
-    role: "前端开发 / 产品设计",
+    year: "2026",
+    role: "内容搭建 / 视频演示",
     image: "./assets/project-demo-1.png",
     description:
-      "实现商品发布、搜索筛选、收藏、用户主页等模块，重点优化移动端体验。",
-    tags: ["HTML", "CSS", "JavaScript"],
+      "在虚拟世界中搭建血管中的微观场景，以期达到在教学中使用的目的",
+    tags: ["虚拟世界", "跨学科项目", "元宇宙教学"],
     award: "",
     links: {
       github: "#",
