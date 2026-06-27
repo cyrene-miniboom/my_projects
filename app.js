@@ -40,7 +40,7 @@ const achievements = [
     tags: ["虚拟世界", "跨学科项目", "元宇宙教学"],
     award: "",
     links: {
-      github: "https://cyrene-miniboom/virtual-world/",
+      github: "https://github.com/cyrene-miniboom/virtual-world/",
       demo: "https://cyrene-miniboom.github.io/virtual-world/"
     }
   },
@@ -70,7 +70,7 @@ const achievements = [
     tags: ["奖学金", "综合表现"],
     award: "校级奖学金",
     links: {
-      github: "https://cyrene-miniboom/scholarship/",
+      github: "https://github.com/cyrene-miniboom/scholarship/",
       demo: "https://cyrene-miniboom.github.io/scholarship/"
     }
   }
