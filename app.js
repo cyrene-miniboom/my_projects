@@ -40,8 +40,8 @@ const achievements = [
     tags: ["虚拟世界", "跨学科项目", "元宇宙教学"],
     award: "",
     links: {
-      github: "#",
-      demo: "#"
+      github: "https://cyrene-miniboom/virtual-world/",
+      demo: "https://cyrene-miniboom.github.io/virtual-world/"
     }
   },
   {
