@@ -34,7 +34,7 @@ const achievements = [
     type: "项目",
     year: "2026",
     role: "内容搭建 / 视频演示",
-    image: "./assets/project-demo-1.png",
+    image: "pictures/屏幕截图 2026-06-27 165719.png",
     description:
       "在虚拟世界中搭建血管中的微观场景，以期达到在教学中使用的目的",
     tags: ["虚拟世界", "跨学科项目", "元宇宙教学"],
