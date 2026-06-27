@@ -70,8 +70,8 @@ const achievements = [
     tags: ["奖学金", "综合表现"],
     award: "校级奖学金",
     links: {
-      github: "#",
-      demo: "#"
+      github: "https://cyrene-miniboom/scholarship/",
+      demo: "https://cyrene-miniboom.github.io/scholarship/"
     }
   }
 ];
