@@ -64,7 +64,7 @@ const achievements = [
     type: "奖项",
     year: "2023",
     role: "个人奖项",
-    image: "./assets/competition-1.png",
+    image: "pictures/IMG_20260626_153357.jpg",
     description:
       "因学业成绩、项目实践和综合表现获得学院 / 学校奖学金。",
     tags: ["奖学金", "综合表现"],
